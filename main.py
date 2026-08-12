@@ -10,8 +10,8 @@ def generate_lotto():
   random.shuffle(lotto)
   return lotto[:6]
 
-botton = st.button["로또를 생성해 주세요"]
+button = st.button["로또를 생성해 주세요"]
 
 if button:
   for i in range(5):
-    st.subheader(f"{1+1}행운의번호: :green[{generate_lotto()}]")
+    st.subheader(f"{i + 1} 행운의번호: :green[{generate_lotto()}]")
