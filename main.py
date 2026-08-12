@@ -10,7 +10,7 @@ def generate_lotto():
   random.shuffle(lotto)
   return lotto[:6]
 
-button = st.button["로또를 생성해 주세요"]
+button = st.button("로또를 생성해 주세요")
 
 if button:
   for i in range(5):
